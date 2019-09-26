@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+{% block content %}
+
+{% if price %}
+  <h2> The current price of {{crypto}} in {{fiat}} is {{price}}</h2>
+
+<form action="/" >
+    <button class="btn btn-secondary" type="submit" >reset</button>
+</form>
+
+{% else %}
+{% endif %}
+
+{% endblock content %}

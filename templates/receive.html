@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+{% block content %}
+<h1>Cypto Currency Price Converter</h1>
+<p> select your option </p>
+<form action="" method="post">
+
+  <div class="form-group">
+    <select class="form-control" name="crypto">
+      <option value="BTC">Bitcoin</option>
+      <option value="ETH">Etherium</option>
+      <option value="LTC">Litecoin</option>
+
+    </select>
+  </div>
+
+  <div class="form-group">
+    <select class="form-control" name="fiat">
+      <option value="USD">US dollar</option>
+      <option value="EUR">Euro</option>
+      <option value="GBP">Pound</option>
+
+    </select>
+  </div>
+  <div class="form-group">
+    <button class="btn btn-secondary" type="submit" name="convert">get price</button>
+  </div>
+</form>
+
+{% endblock content %}
